@@ -1,0 +1,324 @@
+/* CSS MEDIA QUERY */
+
+/* /* plus grand écran (max-width: 1440px)*/
+
+/* grand écran (max-width: 1200px)*/
+
+/* Écran moyen max (max-width: 992px)*/
+@media only screen and (max-width: 1134px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  /* section */
+  .section_qui_sommes_nous {
+    width: 100%;
+    height: auto;
+  }
+
+  /* container */
+  .qui_sommes_nous_container {
+    width: 95%;
+    margin: var(--sm-margin-40) auto 0;
+  }
+
+  .qui_sommes_nous_header span {
+    width: 220px;
+    height: 35px;
+  }
+
+  /* qui_sommes_nous_contenu commence ici */
+  .qui_sommes_nous_contenu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sm-gap-3);
+  }
+
+  /* QUI SOMMES NOUS DESCRIPTION */
+  .qui_sommes_nous_description p {
+    margin-bottom: var(--sm-margin-10);
+  }
+
+  /* LE BOUTON PLAT CE TROUVE ICI */
+
+  .bouton_plat {
+    max-width: 200px;
+    height: 50px;
+    line-height: 50px;
+  }
+  /* QUI SOMMES NOUS IMAGE (MEMBRES DU PERSONEL) */
+  .qui_sommes_nous_image div {
+    width: 100%;
+    height: auto;
+    margin-top: var(--sm-margin-20);
+  }
+
+  .qui_sommes_nous_image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+  }
+
+  /* SECTION NOS SERVICES, OFFRES, MISSION ET VALEUR */
+  .nos_services_container {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* NOS SERVICE */
+
+  /* SECTION DÁPROPOS */
+  .section_daprops {
+    width: 90%;
+    margin: auto;
+  }
+
+  .apropos_container {
+    width: 100%;
+    height: auto;
+  }
+
+  .apropos_contenu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .apropos_image ul,
+  .cards_container,
+  .nos_service_contenu ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .apropos_image ul li img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* cards */
+  .nos_processus_card_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Écran moyen mini (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 15px;
+  }
+
+  /* container */
+  .qui_sommes_nous_container {
+    width: 95%;
+    margin: var(--sm-margin-40) auto 0;
+  }
+
+  .qui_sommes_nous_header span {
+    width: 200px;
+    height: 35px;
+  }
+
+  /* qui_sommes_nous_contenu commence ici */
+  .qui_sommes_nous_contenu {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--sm-gap-3);
+  }
+
+  /* QUI SOMMES NOUS DESCRIPTION */
+  .qui_sommes_nous_description p {
+    width: 100%;
+  }
+
+  /* contact me button */
+  .bouton_plat {
+    /* added lines */
+    max-width: 190px;
+    height: 45px;
+    line-height: 45px;
+  }
+
+  /* SECTION NOS SERVICES, OFFRES, MISSION ET VALEUR */
+  .nos_services_container {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* NOS SERVICE */
+
+  .nos_service_contenu ul li {
+    padding: 15px;
+  }
+
+  .nos_service_contenu ul li .icon_service {
+    width: 50px;
+    height: 50px;
+  }
+  .nos_service_contenu ul li .icon_service svg {
+    width: 25px;
+  }
+
+  .nos_processus_card_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nos_partenaires_contenu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  .temoignage_contenu {
+    width: 90%;
+  }
+  .temoignage_contenu ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .temoignage_container {
+    padding: 30px;
+  }
+}
+
+/* sm ecran 550 */
+
+@media only screen and (max-width: 550px) {
+  /* SECTION D'APROPOS COMMENCE ICI */
+  .section_daprops {
+    width: 90%;
+    margin: auto;
+  }
+
+  .apropos_contenu {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  .apropos_image ul {
+    gap: 2rem;
+  }
+
+  .apropos_image ul li img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* apopos_description */
+
+  /* cards_container */
+  .cards_container,
+  .nos_processus_card_wrapper,
+  .nos_service_contenu ul,
+  .apropos_image ul,
+  .temoignage_contenu ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card svg {
+    width: 20px;
+  }
+  .card .card_header span {
+    padding: 10px;
+    background: var(--secondary-bg-color);
+  }
+
+  /* temoignage */
+
+  .temoignage_header .sub_header {
+    font-size: 0.775rem;
+  }
+
+  .temoignage_contenu ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .temoignage_container {
+    padding: 20px;
+  }
+  .seperator {
+    width: 10%;
+  }
+  .slider_tracker_wrapper span:nth-child(1) {
+    transform: scale(1.5);
+  }
+
+  .slider_tracker_wrapper span {
+    width: 8px;
+    height: 8px;
+  }
+  .nos_partenaires_contenu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .partenaires img {
+    width: 80px;
+    height: auto;
+  }
+}
+
+/* xs petit écran ( max-width:  (425px - 0 )) */
+
+@media only screen and (max-width: 425px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+
+  .qui_sommes_nous_header span {
+    width: 200px;
+    height: 35px;
+  }
+
+  /* LE BOUTON PLAT CE TROUVE ICI */
+
+  .bouton_plat {
+    max-width: 180px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  /* NOS SERVICES */
+  .nos_service_contenu ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
