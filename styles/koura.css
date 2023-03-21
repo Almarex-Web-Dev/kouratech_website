@@ -398,12 +398,17 @@ ul {
   padding: 20px;
 }
 
+.nos_service_contenu ul li h3 a {
+  color: var(--tertiary-text-color);
+  font-size: 1.2rem;
+}
+
 .nos_service_contenu ul li:nth-child(1) {
   background: var(--primary-bg-color);
   color: var(--white-text-color);
 }
 .nos_service_contenu ul li:nth-child(1) p,
-.nos_service_contenu ul li:nth-child(1) h3 {
+.nos_service_contenu ul li:nth-child(1) h3 a {
   color: var(--white-text-color);
 }
 
